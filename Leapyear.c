@@ -15,6 +15,7 @@ int main(int argc,char* argv[])
     if(argc!=2)
     {
         printf("Invalid input");
+        return 0;
     }
     year=atoi(argv[1]);
     if(year%100==0)
@@ -38,3 +39,4 @@ int main(int argc,char* argv[])
     }
     
 }
+

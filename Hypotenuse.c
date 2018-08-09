@@ -14,6 +14,7 @@ int main(int argc,char* argv[])
     if(argc!=3)
     {
         printf("InValid Entry");
+        return 0;
     }
     a=atoi(argv[1]);
     b=atoi(argv[2]);
@@ -23,3 +24,4 @@ int main(int argc,char* argv[])
 
     return 0;
 }
+
