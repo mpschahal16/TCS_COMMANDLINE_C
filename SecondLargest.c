@@ -16,7 +16,7 @@ int main(int argc,char* argv[])
         printf("Enter more values");
         exit(0);
     }
-    largest1=atoi(argv[1]);
+    largest1=-999;
     for(int i=1;i<argc;i++)
     {
         if(largest1<atoi(argv[i]))
@@ -25,7 +25,7 @@ int main(int argc,char* argv[])
         }
     }
     printf("Largest=%d\n",largest1);
-    largest2=atoi(argv[1]);
+    largest2=-999;
     for(int j=2;j<argc;j++)
     {
         if(atoi(argv[j])>largest2&&atoi(argv[j])<largest1)
@@ -35,3 +35,4 @@ int main(int argc,char* argv[])
     }
     printf("Second Largest=%d",largest2);
 }
+ 
